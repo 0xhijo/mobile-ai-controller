@@ -59,7 +59,7 @@ export class MobileControllerGraph {
       throw new Error('No devices available');
     }
     const selectedDevices: DeviceInfo =
-      devices.length === 0 ? devices[0] : await selectDevices(devices);
+      devices.length === 1 ? devices[0] : await selectDevices(devices);
     this.agent = createAgent({
       model: this.model,
 
