@@ -1,7 +1,7 @@
 import dotenv from 'dotenv';
 dotenv.config();
 
-import { getMobileControllerGraph } from './graphs/graph.js';
+import { getMobileControllerGraph } from './graphs/mobile-controller.graph.js';
 
 const mobileControllerGraph = getMobileControllerGraph();
 

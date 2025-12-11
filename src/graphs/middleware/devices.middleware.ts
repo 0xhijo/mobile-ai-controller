@@ -3,7 +3,7 @@ import { MobileControler } from '../../mobile';
 
 export const createDeviceCheckMiddleware = (mobileController: MobileControler) => {
   return createMiddleware({
-    name: 'MessageLimitMiddleware',
+    name: 'deviceCheckMiddleware',
     beforeModel: async state => {
       const devices = await waitForDevices(mobileController);
       if (devices.length === 0) {
